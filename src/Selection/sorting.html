@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Selection Sort</title>
+     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
+     <style>
+          .legendbox {
+               margin: 10px;
+               height: 40px;
+               width: 50px
+          }
+
+          .legendtext {
+               margin: 10px;
+               height: 40px;
+               line-height: 40px
+          }
+     </style>
+</head>
+
+<body>
+     <h1> Lets Visualise Selection Sort !
+     </h1>
+
+     <div class="container w-75 p-2">
+          <div class="form-group">
+               <label for="input_array">Enter Your array(space
+                    separated) :
+               </label>
+               <input type="text" id="input_array" class="form-control"><br>
+               <button type="button" id="selection" class="btn btn-success" onclick="selection()"> <b>Sort</b> </button>
+          </div>
+          <br>
+          <p id="sorted"></p>
+          <div name="visuals" style="visibility : hidden">
+               <div id="chartcontainer" style="float: left; height : 28rem; width: 45rem"></div>
+               <div class="identifier" style="float: left; margin: 20px">
+                    <div class="legendbox" style="background-color : #d8e8ed"></div>
+                    <div class="legendbox" style="background-color : #6ceb78"></div>
+                    <div class="legendbox" style="background-color : #eb3f28"></div>
+               </div>
+               <div class="identifiertext" style="float: left; margin: 20px 5px">
+                    <div class="legendtext">Unsorted Elements</div>
+                    <div class="legendtext">Sorted Elements</div>
+                    <div class="legendtext">Current index / Minimum element</div>
+               </div>
+          </div>
+</body>
+<script type="text/javascript" src="selection.js"> </script>
+
+</html>
